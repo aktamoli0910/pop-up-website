@@ -1,0 +1,50 @@
+body {
+    margin: 10px;
+    background-image: url(https://images.unsplash.com/photo-1483232539664-d89822fb5d3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTF8MTEzMDkxMnx8ZW58MHx8fHw%3D&w=1000&q=80);
+
+  }
+
+  .clickme {
+    background-color: rgba(18, 243, 187, 0.959);
+    color: rgb(251, 94, 10);
+    font-size: 2rem;
+    padding: 10px;
+    border: 4px solid black;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+
+  .clickme:hover {
+    background-color: rgba(154, 221, 28, 0.954);
+    color: #ff1278;
+  }
+
+  #popup {
+    background-color: #ffd485;
+    opacity: 0;
+    display: none;
+    background: linear-gradient(#37f169, #dfff53e3);
+    max-width: 600px;
+    position: relative;
+    border: 10px solid black;
+    border-radius: 20px;
+  }
+  #popup.show {
+    opacity: 1;
+    animation: fade-in 1s forwards;
+    display: block;
+  }
+
+  #popup.closing {
+    animation: fade-out 1 forwards;
+    display: block;
+  }
+  #close-button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #ff0000;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
